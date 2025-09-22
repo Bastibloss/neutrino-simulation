@@ -18,7 +18,7 @@ end=$(date +%s)
 rundtime=$((end - start))
 
 #calculamos el promedio (tiempo total/1000 eventos)
-Promedio=$(echo "scale=4: $runtime / 1000" | bc)
+Promedio=$(echo "scale=4: $runtime / 1000")
 
 #guardar informacion de la simulacion
 echo "Tiempo total de la ejecucion:$runtime segundos" > performance.txt
