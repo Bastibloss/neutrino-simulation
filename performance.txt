@@ -1,0 +1,2 @@
+Tiempo total de la ejecucion: 0.952484 segundos
+Tiempo promedio por evento: 0.000952484 segundos
