@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Da inicio a la simulacion
 start=$(date +%s%N)
 
 #Limpiar residuos
@@ -15,9 +15,10 @@ done
 cat *.txt > results.txt
 
 end=$(date +%s%N)
+# Tiempo que demora en ejecutar toda la simulacion
 runtime=$(awk "BEGIN {print ($end - $start)/1000000000}")
 
-# calculamos el promedio (tiempo total/1000 eventos)
+# calculamos el promedio (tiempo total/999 eventos)
 promedio=$(awk -v r="$runtime" "BEGIN {print r/999}")
 
 # guardar informacion de la simulacion
