@@ -1,6 +1,6 @@
 #!/bin/bash
 
-star=$(date +$s)
+start=$(date +$s)
 
 #Limpiar residuos
 rm -f *.txt
