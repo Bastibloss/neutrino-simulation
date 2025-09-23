@@ -17,8 +17,8 @@ cat *.txt > results.txt
 end=$(date +%s%N)
 runtime=$(awk "BEGIN {print ($end - $start)/1000000000}")
 
-# calculamos el promedio (tiempo total/1000 eventos)
-promedio=$(awk -v r="$runtime" "BEGIN {print r/1000}")
+# calculamos el promedio (tiempo total/999 eventos)
+promedio=$(awk -v r="$runtime" "BEGIN {print r/999}")
 
 # guardar informacion de la simulacion
 echo "Tiempo total de la ejecucion: $runtime segundos" > performance.txt
